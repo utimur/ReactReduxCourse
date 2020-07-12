@@ -1,0 +1,41 @@
+
+
+
+.search {
+  display: flex;
+  margin: 10px 0;
+
+  &-input{
+    padding: 5px;
+    width: 100%;
+  }
+
+  &-btn {
+    padding: 5px;
+  }
+}
+
+
+.fetching{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 30vh auto;
+  border: 2px dashed red;
+  animation-name: search-fetching;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes search-fetching {
+  0% {
+    transform: rotate(0deg);
+  }
+
+
+  100% {
+    transform: rotate(360deg) scale(1.3);
+  }
+}
