@@ -45,12 +45,12 @@ const Main = () => {
 
             {
                 isFetching === false
-                 ?
-                repos.map(repo =><Repo repo={repo}/>)
-                 :
+                 ? repos.map((repo, index) => <Repo key={index} repo={repo} />)
+                 : (
                     <div className="fetching">
 
                     </div>
+                 )
             }
 
             <div className="pages">
